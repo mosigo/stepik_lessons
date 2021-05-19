@@ -1,0 +1,5 @@
+input#name
+//input[@name='mosigo_name2']
+input.third
+//input[@mosigo_attr='mosigo4']
+//input[contains(@class, 'second')]
