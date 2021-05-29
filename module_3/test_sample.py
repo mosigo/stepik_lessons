@@ -1,4 +1,6 @@
 from selenium import webdriver
+from selenium.webdriver.support.expected_conditions import visibility_of
+from selenium.webdriver.support.wait import WebDriverWait
 
 # 1.1.1 Переходы по страницам каталога
 # Предусловия: раздел каталога "Books" существует и доступен на сайте, в нём более 40 товаров.
@@ -9,8 +11,6 @@ from selenium import webdriver
 # "с 21 по 40", появилась кнопка "назад" для перехода обратно на первую страницу каталога.
 # - 3) Нажать на кнопку "назад": под заголовком раздела указано, что отобразились результаты
 # "с 1 по 20", кнопка "назад" исчезла, кнопка "вперёд" доступна.
-from selenium.webdriver.support.expected_conditions import visibility_of
-from selenium.webdriver.support.wait import WebDriverWait
 
 catalogue_link = "http://selenium1py.pythonanywhere.com/ru/catalogue/category/books_2/"
 
