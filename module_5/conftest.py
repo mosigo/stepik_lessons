@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope="function")
 def browser(request):
     language = request.config.getoption("language")
     options = Options()
