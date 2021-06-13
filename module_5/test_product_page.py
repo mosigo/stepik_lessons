@@ -7,6 +7,7 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?prom
 
 class TestProductPage:
     @pytest.mark.xfail
+    @pytest.mark.skip
     @pytest.mark.parametrize('promo_offer',
                              ["offer0", "offer1", "offer2", "offer3", "offer4", "offer5", "offer6", "offer7", "offer8",
                               "offer9"])
@@ -36,8 +37,41 @@ class TestProductPage:
             f'Неверная стоимость товаров в корзине после добавления очередного товара: указано ' \
             f'"{actual_basket_price}", а должно быть "{expected_basket_price}"'
 
+    @pytest.mark.xfail
+    def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
 
+        # act
+        page.add_to_basket()
+        # page.solve_quiz_and_get_code()
 
+        # assert
+        page.should_not_be_success_message()
+
+    def test_guest_cant_see_success_message(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+
+        # assert
+        page.should_not_be_success_message()
+
+    @pytest.mark.xfail
+    def test_message_disappeared_after_adding_product_to_basket(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        page.add_to_basket()
+        # page.solve_quiz_and_get_code()
+
+        # assert
+        page.should_be_success_message_disappear()
 
 
 

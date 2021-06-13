@@ -26,3 +26,13 @@ class ProductPage(BasePage):
     def should_be_basket_price_message(self):
         assert self.is_element_present(*ProductPageLocators.BASKET_TOTAL_PRICE_MESSAGE), \
             'Нет сообщения с новой суммой товаров в корзине после добавления очередного товара'
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_ADD_TO_BASKET_MESSAGE), \
+            'Выведено сообщение об успешном добавлении товара в корзину, ' \
+            'хотя оно в данный момент отображаться не должно'
+
+    def should_be_success_message_disappear(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_ADD_TO_BASKET_MESSAGE), \
+            'Отображается сообщение об успешном добавлении товара в корзину, ' \
+            'хотя оно должно исчезнуть'
