@@ -1,7 +1,8 @@
 import pytest
 
-from module_5.pages.login_page import LoginPage
-from module_5.pages.product_page import ProductPage
+from .pages.basket_page import BasketPage
+from .pages.login_page import LoginPage
+from .pages.product_page import ProductPage
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo="
 
@@ -46,7 +47,6 @@ class TestProductPage:
 
         # act
         page.add_to_basket()
-        # page.solve_quiz_and_get_code()
 
         # assert
         page.should_not_be_success_message()
@@ -55,8 +55,6 @@ class TestProductPage:
         # arrange
         page = ProductPage(browser, link)
         page.open()
-
-        # act
 
         # assert
         page.should_not_be_success_message()
@@ -69,7 +67,6 @@ class TestProductPage:
 
         # act
         page.add_to_basket()
-        # page.solve_quiz_and_get_code()
 
         # assert
         page.should_be_success_message_disappear()
@@ -79,8 +76,6 @@ class TestProductPage:
         link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
         page = ProductPage(browser, link)
         page.open()
-
-        # act
 
         # assert
         page.should_be_login_link()
@@ -97,6 +92,18 @@ class TestProductPage:
 
         # assert
         login_page.should_be_login_page()
+
+    def test_guest_cant_see_product_in_basket_opened_from_product_page(self, browser):
+        # arrange
+        link = "http://selenium1py.pythonanywhere.com/en-gb/catalogue/the-city-and-the-stars_95/"
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        basket_page = BasketPage(browser, browser.current_url)
+
+        # and assert
+        basket_page.should_be_empty_basket()
 
 
 
