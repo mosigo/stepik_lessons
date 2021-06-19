@@ -11,7 +11,6 @@ link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?prom
 
 class TestProductPage:
     @pytest.mark.xfail
-    @pytest.mark.skip
     @pytest.mark.parametrize('promo_offer',
                              ["offer0", "offer1", "offer2", "offer3", "offer4", "offer5", "offer6", "offer7", "offer8",
                               "offer9"])
