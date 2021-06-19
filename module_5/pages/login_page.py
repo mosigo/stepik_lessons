@@ -1,8 +1,33 @@
+from selenium.webdriver.support.expected_conditions import visibility_of
+from selenium.webdriver.support.wait import WebDriverWait
+
 from .base_page import BasePage
 from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
+    def get_submit_button(self, locator, button_description):
+        button = self.browser.find_element(*locator)
+        WebDriverWait(self.browser, 5).until(
+            visibility_of(button),
+            message=f'Кнопка "{button_description}" не найдена на странице {self.browser.current_url}, '
+                    f'невозможно тестировать логин пользователя'
+        )
+        return button
+
+    def login_user(self, email, password):
+        button = self.get_submit_button(LoginPageLocators.LOGIN_FORM_SUBMIT_BUTTON, 'Войти')
+        self.browser.find_element(*LoginPageLocators.LOGIN_FORM_EMAIL).send_keys(email)
+        self.browser.find_element(*LoginPageLocators.LOGIN_FORM_PASSWORD).send_keys(password)
+        button.click()
+
+    def register_new_user(self, email, password):
+        button = self.get_submit_button(LoginPageLocators.REGISTER_FORM_SUBMIT_BUTTON, 'Зарегистироваться')
+        self.browser.find_element(*LoginPageLocators.REGISTER_FORM_EMAIL).send_keys(email)
+        self.browser.find_element(*LoginPageLocators.REGISTER_FORM_PASSWORD).send_keys(password)
+        self.browser.find_element(*LoginPageLocators.REGISTER_FORM_PASSWORD_CONFIRM).send_keys(password)
+        button.click()
+
     def should_be_login_page(self):
         self.should_be_login_url()
         self.should_be_login_form()

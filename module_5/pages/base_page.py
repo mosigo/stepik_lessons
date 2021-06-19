@@ -25,7 +25,12 @@ class BasePage:
         link.click()
 
     def should_be_login_link(self):
-        assert self.is_element_present(*BasePageLocators.LOGIN_LINK), "Нет кнопки логина"
+        assert self.is_element_present(*BasePageLocators.LOGIN_LINK), \
+            'Нет кнопки логина на странице'
+
+    def should_be_authorized_user(self):
+        assert self.is_element_present(*BasePageLocators.USER_ICON), \
+            'Нет иконки пользователя, скорее всего пользователь не авторизован'
 
     def is_element_present(self, how, what):
         try:
