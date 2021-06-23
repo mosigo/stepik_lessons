@@ -1,4 +1,37 @@
 {
-  "total" : 21,
-  "items" : [ ]
+  "total" : 24,
+  "items" : [ {
+    "uid" : "dc579d41280fb3b6dd7a1633cf8fe142",
+    "name" : "Логин / регистрация",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "2c4e07152747287e3ff0e9e9352fbf12",
+    "name" : "Добавление товаров в корзину",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 2,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "e15cbe124130e7a3dc0d3d319fb88881",
+    "name" : "Страница с корзиной",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    }
+  } ]
 }

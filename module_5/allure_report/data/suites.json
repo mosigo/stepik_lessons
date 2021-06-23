@@ -9,13 +9,13 @@
         "name" : "TestMainPage",
         "children" : [ {
           "name" : "test_guest_cant_see_product_in_basket_opened_from_main_page",
-          "uid" : "fde51a9a3e93f856",
+          "uid" : "fc317d1a9d3a3256",
           "parentUid" : "dba79cf62a431f528f3544b9dc34a517",
           "status" : "passed",
           "time" : {
-            "start" : 1624135757550,
-            "stop" : 1624135769666,
-            "duration" : 12116
+            "start" : 1624471937572,
+            "stop" : 1624471950494,
+            "duration" : 12922
           },
           "flaky" : false,
           "newFailed" : false,
@@ -26,26 +26,26 @@
         "name" : "TestLoginFromMainPage",
         "children" : [ {
           "name" : "test_guest_can_go_to_login_page",
-          "uid" : "775beb44443c22a3",
+          "uid" : "f4ef544b4c8d4cdb",
           "parentUid" : "d9e63c4664d258d4fbf9551a4b7f9e61",
           "status" : "passed",
           "time" : {
-            "start" : 1624135773366,
-            "stop" : 1624135775356,
-            "duration" : 1990
+            "start" : 1624471954874,
+            "stop" : 1624471956809,
+            "duration" : 1935
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_guest_should_see_login_link",
-          "uid" : "2168fc233cbd755d",
+          "uid" : "b4689a443fba2d7e",
           "parentUid" : "d9e63c4664d258d4fbf9551a4b7f9e61",
           "status" : "passed",
           "time" : {
-            "start" : 1624135779125,
-            "stop" : 1624135780635,
-            "duration" : 1510
+            "start" : 1624471960763,
+            "stop" : 1624471962457,
+            "duration" : 1694
           },
           "flaky" : false,
           "newFailed" : false,
@@ -60,208 +60,208 @@
         "name" : "TestProductPage",
         "children" : [ {
           "name" : "test_guest_can_add_product_to_basket[offer0]",
-          "uid" : "5e693767219ebf3e",
+          "uid" : "534639be1e6a3f94",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135784425,
-            "stop" : 1624135787020,
-            "duration" : 2595
+            "start" : 1624471966685,
+            "stop" : 1624471969399,
+            "duration" : 2714
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer0'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer1]",
-          "uid" : "6b8e4ac7c16f324d",
+          "uid" : "9670a21e30ac7d78",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135790852,
-            "stop" : 1624135793238,
-            "duration" : 2386
+            "start" : 1624471973285,
+            "stop" : 1624471976114,
+            "duration" : 2829
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer1'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer2]",
-          "uid" : "9d0a38d2bc058b1e",
+          "uid" : "20dec7f386b94b72",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135797077,
-            "stop" : 1624135799607,
-            "duration" : 2530
+            "start" : 1624471980091,
+            "stop" : 1624471983091,
+            "duration" : 3000
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer2'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer3]",
-          "uid" : "9f6256897f29093d",
+          "uid" : "21922554106d4454",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135803387,
-            "stop" : 1624135805790,
-            "duration" : 2403
+            "start" : 1624471986835,
+            "stop" : 1624471989450,
+            "duration" : 2615
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer3'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer4]",
-          "uid" : "e4c5667e235bb680",
+          "uid" : "655b20a409c3635",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135809752,
-            "stop" : 1624135812074,
-            "duration" : 2322
+            "start" : 1624471993302,
+            "stop" : 1624471995966,
+            "duration" : 2664
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer4'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer5]",
-          "uid" : "12e7f7fe984c5763",
+          "uid" : "96399c2d17798256",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135815903,
-            "stop" : 1624135818348,
-            "duration" : 2445
+            "start" : 1624471999795,
+            "stop" : 1624472002413,
+            "duration" : 2618
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer5'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer6]",
-          "uid" : "38b941bdff17f172",
+          "uid" : "26165697f4471f44",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135822171,
-            "stop" : 1624135824527,
-            "duration" : 2356
+            "start" : 1624472006373,
+            "stop" : 1624472009427,
+            "duration" : 3054
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer6'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer7]",
-          "uid" : "c801808f06243253",
+          "uid" : "a825dcf54044036e",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "skipped",
           "time" : {
-            "start" : 1624135828369,
-            "stop" : 1624135830910,
-            "duration" : 2541
+            "start" : 1624472013393,
+            "stop" : 1624472016223,
+            "duration" : 2830
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer7'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer8]",
-          "uid" : "7787efbb88dbba48",
+          "uid" : "15fe3b9386849c45",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135834733,
-            "stop" : 1624135837098,
-            "duration" : 2365
+            "start" : 1624472020246,
+            "stop" : 1624472022907,
+            "duration" : 2661
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer8'" ]
         }, {
           "name" : "test_guest_can_add_product_to_basket[offer9]",
-          "uid" : "f171fb40f1908ad8",
+          "uid" : "f1d72df4a7498c00",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135840920,
-            "stop" : 1624135843926,
-            "duration" : 3006
+            "start" : 1624472027157,
+            "stop" : 1624472030026,
+            "duration" : 2869
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ "'offer9'" ]
         }, {
           "name" : "test_guest_cant_see_success_message_after_adding_product_to_basket",
-          "uid" : "afadd7d407760ca8",
+          "uid" : "8e9bd3b89b920304",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "skipped",
           "time" : {
-            "start" : 1624135847787,
-            "stop" : 1624135850105,
-            "duration" : 2318
+            "start" : 1624472034065,
+            "stop" : 1624472036984,
+            "duration" : 2919
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_guest_cant_see_success_message",
-          "uid" : "e1fcbe1eac74a5ed",
+          "uid" : "6843b7bdc6244fbc",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135853973,
-            "stop" : 1624135866072,
-            "duration" : 12099
+            "start" : 1624472040956,
+            "stop" : 1624472053031,
+            "duration" : 12075
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_message_disappeared_after_adding_product_to_basket",
-          "uid" : "cd0a0127f50b4263",
+          "uid" : "fc45af35da5772d8",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "skipped",
           "time" : {
-            "start" : 1624135869895,
-            "stop" : 1624135876237,
-            "duration" : 6342
+            "start" : 1624472056817,
+            "stop" : 1624472063148,
+            "duration" : 6331
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_guest_should_see_login_link_on_product_page",
-          "uid" : "a12b261ae9eff622",
+          "uid" : "70061265699f610",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135880181,
-            "stop" : 1624135881515,
-            "duration" : 1334
+            "start" : 1624472066999,
+            "stop" : 1624472068291,
+            "duration" : 1292
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_guest_can_go_to_login_page_from_product_page",
-          "uid" : "2656bfcaace19ddb",
+          "uid" : "919835a8167ebaed",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135885571,
-            "stop" : 1624135887258,
-            "duration" : 1687
+            "start" : 1624472072209,
+            "stop" : 1624472074139,
+            "duration" : 1930
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_guest_cant_see_product_in_basket_opened_from_product_page",
-          "uid" : "4198f3e16867cd42",
+          "uid" : "22a63887a6744b38",
           "parentUid" : "79d2649691bfb892d427040eb65f872f",
           "status" : "passed",
           "time" : {
-            "start" : 1624135891147,
-            "stop" : 1624135903014,
-            "duration" : 11867
+            "start" : 1624472077865,
+            "stop" : 1624472089717,
+            "duration" : 11852
           },
           "flaky" : false,
           "newFailed" : false,
@@ -272,26 +272,26 @@
         "name" : "TestUserAddToBasketFromProductPage",
         "children" : [ {
           "name" : "test_user_cant_see_success_message",
-          "uid" : "9c1ef6c6d76650b7",
+          "uid" : "c4de3021c00dbdf5",
           "parentUid" : "b072dc6a895f823b041fd6afb360d40a",
           "status" : "passed",
           "time" : {
-            "start" : 1624135912454,
-            "stop" : 1624135923862,
-            "duration" : 11408
+            "start" : 1624472100122,
+            "stop" : 1624472111855,
+            "duration" : 11733
           },
           "flaky" : false,
           "newFailed" : false,
           "parameters" : [ ]
         }, {
           "name" : "test_user_can_add_product_to_basket",
-          "uid" : "a6f0811a2e63a199",
+          "uid" : "309fc35cc528dbff",
           "parentUid" : "b072dc6a895f823b041fd6afb360d40a",
           "status" : "passed",
           "time" : {
-            "start" : 1624135933478,
-            "stop" : 1624135936451,
-            "duration" : 2973
+            "start" : 1624472121845,
+            "stop" : 1624472124738,
+            "duration" : 2893
           },
           "flaky" : false,
           "newFailed" : false,
@@ -302,5 +302,306 @@
       "uid" : "debe48d64934bf842460b236088972f9"
     } ],
     "uid" : "1b92dd24d2433d29580106c20b1794f5"
+  }, {
+    "name" : "test_main_page",
+    "children" : [ {
+      "name" : "TestMainPage",
+      "children" : [ {
+        "name" : "Гость НЕ должен видеть товаров в корзине, если перешёл в неё с главной страницв, не добавляя перед этим товаров",
+        "uid" : "c990ad2acd15fc8f",
+        "parentUid" : "72c35de7480191703646715c8e369410",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478468200,
+          "stop" : 1624478480502,
+          "duration" : 12302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "72c35de7480191703646715c8e369410"
+    }, {
+      "name" : "TestLoginFromMainPage",
+      "children" : [ {
+        "name" : "Гость должен видеть кнопку перехода на страницу логина / регистрации",
+        "uid" : "ea3ed503f43b87b1",
+        "parentUid" : "2025c362a44f9f6948bf9d24f2c84f66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478484188,
+          "stop" : 1624478485600,
+          "duration" : 1412
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Гость может перейти на страницу логина / регистрации",
+        "uid" : "68ee3222a0ada3f2",
+        "parentUid" : "2025c362a44f9f6948bf9d24f2c84f66",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478489632,
+          "stop" : 1624478491344,
+          "duration" : 1712
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2025c362a44f9f6948bf9d24f2c84f66"
+    } ],
+    "uid" : "606c977bf0ca40a66f32cea9245eb3e6"
+  }, {
+    "name" : "test_product_page",
+    "children" : [ {
+      "name" : "TestLoginButtonInProductPage",
+      "children" : [ {
+        "name" : "Гость должен видеть кнопку перехода на страницу логина / регистрации",
+        "uid" : "db36d4104d374d27",
+        "parentUid" : "0ae988c4bde5ba9c3eec3848eff257fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478495099,
+          "stop" : 1624478496607,
+          "duration" : 1508
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Гость может перейти на страницу логина / регистрации",
+        "uid" : "4f063be7272abb19",
+        "parentUid" : "0ae988c4bde5ba9c3eec3848eff257fe",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478500576,
+          "stop" : 1624478502144,
+          "duration" : 1568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0ae988c4bde5ba9c3eec3848eff257fe"
+    }, {
+      "name" : "TestProductPage",
+      "children" : [ {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "337b3222a6b2b0e6",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478505930,
+          "stop" : 1624478508183,
+          "duration" : 2253
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer0'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "d291411eebf90c2c",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478512337,
+          "stop" : 1624478514836,
+          "duration" : 2499
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer1'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "1d8f1adfaec8935a",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478518699,
+          "stop" : 1624478521135,
+          "duration" : 2436
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer2'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "3342b0c9eaf5ca30",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478525216,
+          "stop" : 1624478527530,
+          "duration" : 2314
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer3'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "ea09e663eafa3d31",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478531371,
+          "stop" : 1624478533740,
+          "duration" : 2369
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer4'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "981ab9f8ba14470",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478537920,
+          "stop" : 1624478540209,
+          "duration" : 2289
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer5'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "3951ee60a45ed0b1",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478544013,
+          "stop" : 1624478546440,
+          "duration" : 2427
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer6'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "389d55255ef6f6d5",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624478550303,
+          "stop" : 1624478553310,
+          "duration" : 3007
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer7'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "d9bc44b222e6b1b5",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478557366,
+          "stop" : 1624478559733,
+          "duration" : 2367
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer8'" ]
+      }, {
+        "name" : "Гость может добавить товар в корзину (проверка промо)",
+        "uid" : "62fa28d951f8cbcd",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478563738,
+          "stop" : 1624478565930,
+          "duration" : 2192
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'offer9'" ]
+      }, {
+        "name" : "Гость НЕ должен видеть сообщение об успешном добавлении товара в корзину",
+        "uid" : "c4702ba5469dd9e7",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478569980,
+          "stop" : 1624478583218,
+          "duration" : 13238
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Гость НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
+        "uid" : "32414990f89db85e",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478587848,
+          "stop" : 1624478599612,
+          "duration" : 11764
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Сообщение об успешном добавлении товара в корзину должно исчезать после добавления товара в корзину",
+        "uid" : "8f4a389673a06824",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478603400,
+          "stop" : 1624478614849,
+          "duration" : 11449
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Гость НЕ должен видеть товаров в корзине, если перешёл в неё, не добавляя перед этим товаров",
+        "uid" : "4adba607c807007a",
+        "parentUid" : "d203acf98958226f9b8ac205fc69e370",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478619431,
+          "stop" : 1624478631345,
+          "duration" : 11914
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d203acf98958226f9b8ac205fc69e370"
+    }, {
+      "name" : "TestUserAddToBasketFromProductPage",
+      "children" : [ {
+        "name" : "Залогиненный пользователь НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
+        "uid" : "7ee558633196e3b6",
+        "parentUid" : "05777e6ad26eb32b637602f0fa6be645",
+        "status" : "passed",
+        "time" : {
+          "start" : 1624478641898,
+          "stop" : 1624478653039,
+          "duration" : 11141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "Залогиненный пользователь после добавления товара в корзину видит корректные сообщения об успешности операции",
+        "uid" : "677437bf02ec8a14",
+        "parentUid" : "05777e6ad26eb32b637602f0fa6be645",
+        "status" : "skipped",
+        "time" : {
+          "start" : 1624478663119,
+          "stop" : 1624478675418,
+          "duration" : 12299
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "05777e6ad26eb32b637602f0fa6be645"
+    } ],
+    "uid" : "2ac69296d25a79e4a24517462ae8926f"
   } ]
 }

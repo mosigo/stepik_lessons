@@ -1,5 +1,5 @@
 {
-  "total" : 1,
+  "total" : 3,
   "items" : [ {
     "uid" : "1b92dd24d2433d29580106c20b1794f5",
     "name" : "module_5",
@@ -10,6 +10,28 @@
       "passed" : 18,
       "unknown" : 0,
       "total" : 21
+    }
+  }, {
+    "uid" : "2ac69296d25a79e4a24517462ae8926f",
+    "name" : "test_product_page",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 2,
+      "passed" : 16,
+      "unknown" : 0,
+      "total" : 18
+    }
+  }, {
+    "uid" : "606c977bf0ca40a66f32cea9245eb3e6",
+    "name" : "test_main_page",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 3,
+      "unknown" : 0,
+      "total" : 3
     }
   } ]
 }
