@@ -12,7 +12,7 @@ link = "http://selenium1py.pythonanywhere.com/"
 @allure.feature('Страница с корзиной')
 @allure.story('Гость переходит в корзину')
 class TestMainPage:
-    @allure.title('Гость НЕ должен видеть товаров в корзине, если перешёл в неё с главной страницв, '
+    @allure.title('Гость НЕ должен видеть товаров в корзине, если перешёл в неё с главной страницы, '
                   'не добавляя перед этим товаров')
     def test_guest_cant_see_product_in_basket_opened_from_main_page(self, browser):
         # arrange

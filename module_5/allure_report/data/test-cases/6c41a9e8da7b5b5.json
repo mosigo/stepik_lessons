@@ -1,0 +1,135 @@
+{
+  "uid" : "6c41a9e8da7b5b5",
+  "name" : "Гость НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
+  "fullName" : "test_product_page.TestProductPage#test_guest_cant_see_success_message",
+  "historyId" : "7791d24ff79aa305ee95ecc9e5d47c89",
+  "time" : {
+    "start" : 1624568588750,
+    "stop" : 1624568600610,
+    "duration" : 11860
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1624568585532,
+      "stop" : 1624568588749,
+      "duration" : 3217
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем страницу http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=",
+      "time" : {
+        "start" : 1624568588751,
+        "stop" : 1624568590081,
+        "duration" : 1330
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверяем, что сообщение об успешном добавлении товара в корзину НЕ отображается",
+      "time" : {
+        "start" : 1624568590081,
+        "stop" : 1624568600610,
+        "duration" : 10529
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "336b9637cea98939",
+      "name" : "stdout",
+      "source" : "336b9637cea98939.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1624568600610,
+      "stop" : 1624568601419,
+      "duration" : 809
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Гость добавляет товары в корзину"
+  }, {
+    "name" : "feature",
+    "value" : "Добавление товаров в корзину"
+  }, {
+    "name" : "suite",
+    "value" : "Страница продукта"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "iMac.local"
+  }, {
+    "name" : "thread",
+    "value" : "59546-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6c41a9e8da7b5b5.json",
+  "parameterValues" : [ ]
+}

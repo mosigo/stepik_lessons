@@ -1,0 +1,171 @@
+{
+  "uid" : "3b511e071a447eb3",
+  "name" : "Гость НЕ должен видеть сообщение об успешном добавлении товара в корзину",
+  "fullName" : "test_product_page.TestProductPage#test_guest_cant_see_success_message_after_adding_product_to_basket",
+  "historyId" : "207f3e681c61281b70a910743494f82c",
+  "time" : {
+    "start" : 1624568571698,
+    "stop" : 1624568584673,
+    "duration" : 12975
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1624568568721,
+      "stop" : 1624568571697,
+      "duration" : 2976
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем страницу http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/",
+      "time" : {
+        "start" : 1624568571700,
+        "stop" : 1624568572999,
+        "duration" : 1299
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Добавляем товар в корзину",
+      "time" : {
+        "start" : 1624568572999,
+        "stop" : 1624568573047,
+        "duration" : 48
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Сохраняем скриншот текущей страницы",
+      "time" : {
+        "start" : 1624568573047,
+        "stop" : 1624568574154,
+        "duration" : 1107
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "341cee6584f50c65",
+        "name" : "Screenshot",
+        "source" : "341cee6584f50c65.png",
+        "type" : "image/png",
+        "size" : 1005261
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что сообщение об успешном добавлении товара в корзину НЕ отображается",
+      "time" : {
+        "start" : 1624568574154,
+        "stop" : 1624568584673,
+        "duration" : 10519
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "eb88d33b05812b6",
+      "name" : "stdout",
+      "source" : "eb88d33b05812b6.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 4,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1624568584674,
+      "stop" : 1624568585529,
+      "duration" : 855
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Гость добавляет товары в корзину"
+  }, {
+    "name" : "feature",
+    "value" : "Добавление товаров в корзину"
+  }, {
+    "name" : "suite",
+    "value" : "Страница продукта"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "iMac.local"
+  }, {
+    "name" : "thread",
+    "value" : "59546-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3b511e071a447eb3.json",
+  "parameterValues" : [ ]
+}

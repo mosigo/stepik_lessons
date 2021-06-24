@@ -1,0 +1,138 @@
+{
+  "uid" : "e849dd4df9db51e2",
+  "name" : "Гость должен видеть кнопку перехода на страницу логина / регистрации",
+  "fullName" : "test_main_page.TestLoginFromMainPage#test_guest_should_see_login_link",
+  "historyId" : "cfa5e66f6fc7be1333458fd635095aa2",
+  "time" : {
+    "start" : 1624568488304,
+    "stop" : 1624568489593,
+    "duration" : 1289
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1624568484428,
+      "stop" : 1624568488303,
+      "duration" : 3875
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем страницу http://selenium1py.pythonanywhere.com/",
+      "time" : {
+        "start" : 1624568488305,
+        "stop" : 1624568489583,
+        "duration" : 1278
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверяем, что кнопка перехода на страницу логина / регистрации есть на странице",
+      "time" : {
+        "start" : 1624568489583,
+        "stop" : 1624568489593,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "47a2f4641bcd8eee",
+      "name" : "stdout",
+      "source" : "47a2f4641bcd8eee.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1624568489594,
+      "stop" : 1624568490577,
+      "duration" : 983
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Логин / регистрация"
+  }, {
+    "name" : "story",
+    "value" : "Гость переходит на страницу логина / регистрации с главной страницы"
+  }, {
+    "name" : "suite",
+    "value" : "Главная страница"
+  }, {
+    "name" : "tag",
+    "value" : "login_guest"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginFromMainPage"
+  }, {
+    "name" : "host",
+    "value" : "iMac.local"
+  }, {
+    "name" : "thread",
+    "value" : "59546-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_main_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "login_guest" ]
+  },
+  "source" : "e849dd4df9db51e2.json",
+  "parameterValues" : [ ]
+}
