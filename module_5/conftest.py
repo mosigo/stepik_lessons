@@ -26,8 +26,8 @@ def browser(request):
 
     yield browser
 
-    now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-    browser.save_screenshot(f'screenshot-{now}.png')
+    # now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    # browser.save_screenshot(f'screenshot-{now}.png')
     browser.quit()
 
 

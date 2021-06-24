@@ -1,420 +1,210 @@
 [ {
-  "uid" : "389d55255ef6f6d5",
+  "uid" : "7a4a241cbaea71b4",
   "name" : "Гость может добавить товар в корзину (проверка промо)",
   "time" : {
-    "start" : 1624478550303,
-    "stop" : 1624478553310,
-    "duration" : 3007
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3342b0c9eaf5ca30",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478525216,
-    "stop" : 1624478527530,
-    "duration" : 2314
+    "start" : 1624546564182,
+    "stop" : 1624546569650,
+    "duration" : 5468
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b4689a443fba2d7e",
-  "name" : "test_guest_should_see_login_link",
-  "time" : {
-    "start" : 1624471960763,
-    "stop" : 1624471962457,
-    "duration" : 1694
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "ea09e663eafa3d31",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478531371,
-    "stop" : 1624478533740,
-    "duration" : 2369
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "919835a8167ebaed",
-  "name" : "test_guest_can_go_to_login_page_from_product_page",
-  "time" : {
-    "start" : 1624472072209,
-    "stop" : 1624472074139,
-    "duration" : 1930
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "fc45af35da5772d8",
-  "name" : "test_message_disappeared_after_adding_product_to_basket",
-  "time" : {
-    "start" : 1624472056817,
-    "stop" : 1624472063148,
-    "duration" : 6331
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "3951ee60a45ed0b1",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478544013,
-    "stop" : 1624478546440,
-    "duration" : 2427
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f1d72df4a7498c00",
-  "name" : "test_guest_can_add_product_to_basket[offer9]",
-  "time" : {
-    "start" : 1624472027157,
-    "stop" : 1624472030026,
-    "duration" : 2869
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "981ab9f8ba14470",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478537920,
-    "stop" : 1624478540209,
-    "duration" : 2289
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a825dcf54044036e",
-  "name" : "test_guest_can_add_product_to_basket[offer7]",
-  "time" : {
-    "start" : 1624472013393,
-    "stop" : 1624472016223,
-    "duration" : 2830
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "d291411eebf90c2c",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478512337,
-    "stop" : 1624478514836,
-    "duration" : 2499
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "20dec7f386b94b72",
-  "name" : "test_guest_can_add_product_to_basket[offer2]",
-  "time" : {
-    "start" : 1624471980091,
-    "stop" : 1624471983091,
-    "duration" : 3000
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "96399c2d17798256",
-  "name" : "test_guest_can_add_product_to_basket[offer5]",
-  "time" : {
-    "start" : 1624471999795,
-    "stop" : 1624472002413,
-    "duration" : 2618
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "1d8f1adfaec8935a",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478518699,
-    "stop" : 1624478521135,
-    "duration" : 2436
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6843b7bdc6244fbc",
-  "name" : "test_guest_cant_see_success_message",
-  "time" : {
-    "start" : 1624472040956,
-    "stop" : 1624472053031,
-    "duration" : 12075
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "4f063be7272abb19",
-  "name" : "Гость может перейти на страницу логина / регистрации",
-  "time" : {
-    "start" : 1624478500576,
-    "stop" : 1624478502144,
-    "duration" : 1568
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "22a63887a6744b38",
-  "name" : "test_guest_cant_see_product_in_basket_opened_from_product_page",
-  "time" : {
-    "start" : 1624472077865,
-    "stop" : 1624472089717,
-    "duration" : 11852
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "d9bc44b222e6b1b5",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478557366,
-    "stop" : 1624478559733,
-    "duration" : 2367
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8e9bd3b89b920304",
-  "name" : "test_guest_cant_see_success_message_after_adding_product_to_basket",
-  "time" : {
-    "start" : 1624472034065,
-    "stop" : 1624472036984,
-    "duration" : 2919
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "4adba607c807007a",
-  "name" : "Гость НЕ должен видеть товаров в корзине, если перешёл в неё, не добавляя перед этим товаров",
-  "time" : {
-    "start" : 1624478619431,
-    "stop" : 1624478631345,
-    "duration" : 11914
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "677437bf02ec8a14",
-  "name" : "Залогиненный пользователь после добавления товара в корзину видит корректные сообщения об успешности операции",
-  "time" : {
-    "start" : 1624478663119,
-    "stop" : 1624478675418,
-    "duration" : 12299
-  },
-  "status" : "skipped",
-  "severity" : "normal"
-}, {
-  "uid" : "ea3ed503f43b87b1",
-  "name" : "Гость должен видеть кнопку перехода на страницу логина / регистрации",
-  "time" : {
-    "start" : 1624478484188,
-    "stop" : 1624478485600,
-    "duration" : 1412
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "68ee3222a0ada3f2",
-  "name" : "Гость может перейти на страницу логина / регистрации",
-  "time" : {
-    "start" : 1624478489632,
-    "stop" : 1624478491344,
-    "duration" : 1712
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "32414990f89db85e",
-  "name" : "Гость НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
-  "time" : {
-    "start" : 1624478587848,
-    "stop" : 1624478599612,
-    "duration" : 11764
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "f4ef544b4c8d4cdb",
-  "name" : "test_guest_can_go_to_login_page",
-  "time" : {
-    "start" : 1624471954874,
-    "stop" : 1624471956809,
-    "duration" : 1935
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c990ad2acd15fc8f",
-  "name" : "Гость НЕ должен видеть товаров в корзине, если перешёл в неё с главной страницв, не добавляя перед этим товаров",
-  "time" : {
-    "start" : 1624478468200,
-    "stop" : 1624478480502,
-    "duration" : 12302
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c4de3021c00dbdf5",
-  "name" : "test_user_cant_see_success_message",
-  "time" : {
-    "start" : 1624472100122,
-    "stop" : 1624472111855,
-    "duration" : 11733
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "309fc35cc528dbff",
-  "name" : "test_user_can_add_product_to_basket",
-  "time" : {
-    "start" : 1624472121845,
-    "stop" : 1624472124738,
-    "duration" : 2893
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "337b3222a6b2b0e6",
-  "name" : "Гость может добавить товар в корзину (проверка промо)",
-  "time" : {
-    "start" : 1624478505930,
-    "stop" : 1624478508183,
-    "duration" : 2253
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "c4702ba5469dd9e7",
-  "name" : "Гость НЕ должен видеть сообщение об успешном добавлении товара в корзину",
-  "time" : {
-    "start" : 1624478569980,
-    "stop" : 1624478583218,
-    "duration" : 13238
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "7ee558633196e3b6",
-  "name" : "Залогиненный пользователь НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
-  "time" : {
-    "start" : 1624478641898,
-    "stop" : 1624478653039,
-    "duration" : 11141
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "15fe3b9386849c45",
-  "name" : "test_guest_can_add_product_to_basket[offer8]",
-  "time" : {
-    "start" : 1624472020246,
-    "stop" : 1624472022907,
-    "duration" : 2661
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "655b20a409c3635",
-  "name" : "test_guest_can_add_product_to_basket[offer4]",
-  "time" : {
-    "start" : 1624471993302,
-    "stop" : 1624471995966,
-    "duration" : 2664
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "534639be1e6a3f94",
-  "name" : "test_guest_can_add_product_to_basket[offer0]",
-  "time" : {
-    "start" : 1624471966685,
-    "stop" : 1624471969399,
-    "duration" : 2714
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "9670a21e30ac7d78",
-  "name" : "test_guest_can_add_product_to_basket[offer1]",
-  "time" : {
-    "start" : 1624471973285,
-    "stop" : 1624471976114,
-    "duration" : 2829
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "8f4a389673a06824",
+  "uid" : "ff4453326b368678",
   "name" : "Сообщение об успешном добавлении товара в корзину должно исчезать после добавления товара в корзину",
   "time" : {
-    "start" : 1624478603400,
-    "stop" : 1624478614849,
-    "duration" : 11449
+    "start" : 1624546628610,
+    "stop" : 1624546641041,
+    "duration" : 12431
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "fc317d1a9d3a3256",
-  "name" : "test_guest_cant_see_product_in_basket_opened_from_main_page",
-  "time" : {
-    "start" : 1624471937572,
-    "stop" : 1624471950494,
-    "duration" : 12922
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "21922554106d4454",
-  "name" : "test_guest_can_add_product_to_basket[offer3]",
-  "time" : {
-    "start" : 1624471986835,
-    "stop" : 1624471989450,
-    "duration" : 2615
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "26165697f4471f44",
-  "name" : "test_guest_can_add_product_to_basket[offer6]",
-  "time" : {
-    "start" : 1624472006373,
-    "stop" : 1624472009427,
-    "duration" : 3054
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "62fa28d951f8cbcd",
+  "uid" : "1e9bb0503a2160d6",
   "name" : "Гость может добавить товар в корзину (проверка промо)",
   "time" : {
-    "start" : 1624478563738,
-    "stop" : 1624478565930,
-    "duration" : 2192
+    "start" : 1624546582704,
+    "stop" : 1624546585226,
+    "duration" : 2522
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "95cd91a10afaf21c",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546547839,
+    "stop" : 1624546550817,
+    "duration" : 2978
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "db36d4104d374d27",
+  "uid" : "1f0569057d2d6ba",
+  "name" : "Гость НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
+  "time" : {
+    "start" : 1624546614145,
+    "stop" : 1624546626352,
+    "duration" : 12207
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cfc4edec2ebaee0e",
+  "name" : "Гость НЕ должен видеть сообщение об успешном добавлении товара в корзину",
+  "time" : {
+    "start" : 1624546598546,
+    "stop" : 1624546611694,
+    "duration" : 13148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "c5367626522ec10e",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546577348,
+    "stop" : 1624546580354,
+    "duration" : 3006
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ce27063760893bc7",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546587646,
+    "stop" : 1624546590462,
+    "duration" : 2816
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5134c6ff6a445ad9",
   "name" : "Гость должен видеть кнопку перехода на страницу логина / регистрации",
   "time" : {
-    "start" : 1624478495099,
-    "stop" : 1624478496607,
-    "duration" : 1508
+    "start" : 1624546534039,
+    "stop" : 1624546535477,
+    "duration" : 1438
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "70061265699f610",
-  "name" : "test_guest_should_see_login_link_on_product_page",
+  "uid" : "7cb912adbff609a3",
+  "name" : "Гость может перейти на страницу логина / регистрации",
   "time" : {
-    "start" : 1624472066999,
-    "stop" : 1624472068291,
-    "duration" : 1292
+    "start" : 1624546529761,
+    "stop" : 1624546531649,
+    "duration" : 1888
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5e09cecf8e04cd9f",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546592829,
+    "stop" : 1624546596235,
+    "duration" : 3406
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "6493a9d167610dc7",
+  "name" : "Гость НЕ должен видеть товаров в корзине, если перешёл в неё с главной страницв, не добавляя перед этим товаров",
+  "time" : {
+    "start" : 1624546510921,
+    "stop" : 1624546523732,
+    "duration" : 12811
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "adce73f6065954ef",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546571991,
+    "stop" : 1624546574929,
+    "duration" : 2938
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "752c459403752516",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546558707,
+    "stop" : 1624546561835,
+    "duration" : 3128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "38582b2a8d510ab5",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546553184,
+    "stop" : 1624546556284,
+    "duration" : 3100
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "11a1ad8204c4763b",
+  "name" : "Гость может добавить товар в корзину (проверка промо)",
+  "time" : {
+    "start" : 1624546542733,
+    "stop" : 1624546545457,
+    "duration" : 2724
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "34e4dae7fab32e2b",
+  "name" : "Залогиненный пользователь после добавления товара в корзину видит корректные сообщения об успешности операции",
+  "time" : {
+    "start" : 1624546688227,
+    "stop" : 1624546700478,
+    "duration" : 12251
+  },
+  "status" : "skipped",
+  "severity" : "normal"
+}, {
+  "uid" : "e421d83a9ee683e6",
+  "name" : "Гость может перейти на страницу логина / регистрации",
+  "time" : {
+    "start" : 1624546537832,
+    "stop" : 1624546540359,
+    "duration" : 2527
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cf563521d188dc25",
+  "name" : "Залогиненный пользователь НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
+  "time" : {
+    "start" : 1624546667277,
+    "stop" : 1624546678422,
+    "duration" : 11145
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "af12230831a12c32",
+  "name" : "Гость НЕ должен видеть товаров в корзине, если перешёл в неё, не добавляя перед этим товаров",
+  "time" : {
+    "start" : 1624546643430,
+    "stop" : 1624546657204,
+    "duration" : 13774
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "3e745e75ef4c4262",
+  "name" : "Гость должен видеть кнопку перехода на страницу логина / регистрации",
+  "time" : {
+    "start" : 1624546526100,
+    "stop" : 1624546527469,
+    "duration" : 1369
   },
   "status" : "passed",
   "severity" : "normal"

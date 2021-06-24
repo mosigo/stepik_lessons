@@ -1,0 +1,150 @@
+{
+  "uid" : "ff4453326b368678",
+  "name" : "Сообщение об успешном добавлении товара в корзину должно исчезать после добавления товара в корзину",
+  "fullName" : "test_product_page.TestProductPage#test_message_disappeared_after_adding_product_to_basket",
+  "historyId" : "00be33377795fb724b903c2887a23a71",
+  "time" : {
+    "start" : 1624546628610,
+    "stop" : 1624546641041,
+    "duration" : 12431
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1624546626428,
+      "stop" : 1624546628605,
+      "duration" : 2177
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем страницу http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/",
+      "time" : {
+        "start" : 1624546628612,
+        "stop" : 1624546630953,
+        "duration" : 2341
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Добавляем товар в корзину",
+      "time" : {
+        "start" : 1624546630954,
+        "stop" : 1624546630993,
+        "duration" : 39
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверяем, что исчезло сообщение об успешном добавлении товара в корзину",
+      "time" : {
+        "start" : 1624546630993,
+        "stop" : 1624546641041,
+        "duration" : 10048
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "b301128186c7cd32",
+      "name" : "stdout",
+      "source" : "b301128186c7cd32.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 3,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1624546641041,
+      "stop" : 1624546641110,
+      "duration" : 69
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "Гость добавляет товары в корзину"
+  }, {
+    "name" : "feature",
+    "value" : "Добавление товаров в корзину"
+  }, {
+    "name" : "suite",
+    "value" : "Страница продукта"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Olga.local"
+  }, {
+    "name" : "thread",
+    "value" : "19402-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff4453326b368678.json",
+  "parameterValues" : [ ]
+}

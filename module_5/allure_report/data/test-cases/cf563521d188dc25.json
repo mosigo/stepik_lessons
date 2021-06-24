@@ -1,0 +1,245 @@
+{
+  "uid" : "cf563521d188dc25",
+  "name" : "Залогиненный пользователь НЕ должен видеть сообщения об успешном добавлении товара в корзину сразу после перехода на страницу товара",
+  "fullName" : "test_product_page.TestUserAddToBasketFromProductPage#test_user_cant_see_success_message",
+  "historyId" : "f839820fadcc5418eef5369a1303f3f4",
+  "time" : {
+    "start" : 1624546667277,
+    "stop" : 1624546678422,
+    "duration" : 11145
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1624546659571,
+      "stop" : 1624546667276,
+      "duration" : 7705
+    },
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем страницу http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/",
+      "time" : {
+        "start" : 1624546659573,
+        "stop" : 1624546662483,
+        "duration" : 2910
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Переходим на страницу логина / регистрации",
+      "time" : {
+        "start" : 1624546662484,
+        "stop" : 1624546662798,
+        "duration" : 314
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Регистрируем пользователя с email <module_5.pages.login_page.LoginPage object at 0x10a612d90> и паролем 'q_1624546662@ya.ru'",
+      "time" : {
+        "start" : 1624546662802,
+        "stop" : 1624546667269,
+        "duration" : 4467
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "Ищем кнопку \"('css selector', 'button[name=\"registration_submit\"]')\"",
+        "time" : {
+          "start" : 1624546662802,
+          "stop" : 1624546662821,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "locator",
+          "value" : "('css selector', 'button[name=\"registration_submit\"]')"
+        }, {
+          "name" : "button_description",
+          "value" : "'Зарегистироваться'"
+        } ],
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "email",
+        "value" : "'q_1624546662@ya.ru'"
+      }, {
+        "name" : "password",
+        "value" : "'qq_1624546662'"
+      } ],
+      "stepsCount" : 1,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "Проверяем, что есть иконка пользователя, то есть человек залогинен",
+      "time" : {
+        "start" : 1624546667269,
+        "stop" : 1624546667276,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 5,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  }, {
+    "name" : "browser",
+    "time" : {
+      "start" : 1624546657277,
+      "stop" : 1624546659571,
+      "duration" : 2294
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Открываем страницу http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/",
+      "time" : {
+        "start" : 1624546667278,
+        "stop" : 1624546667862,
+        "duration" : 584
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "Проверяем, что сообщение об успешном добавлении товара в корзину НЕ отображается",
+      "time" : {
+        "start" : 1624546667862,
+        "stop" : 1624546678421,
+        "duration" : 10559
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
+    "attachments" : [ {
+      "uid" : "876484b5a1be19ac",
+      "name" : "stdout",
+      "source" : "876484b5a1be19ac.txt",
+      "type" : "text/plain",
+      "size" : 40
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 2,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1624546678424,
+      "stop" : 1624546678499,
+      "duration" : 75
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Добавление товаров в корзину"
+  }, {
+    "name" : "story",
+    "value" : "Залогиненный пользователь добавляет товары в корзину"
+  }, {
+    "name" : "suite",
+    "value" : "Страница продукта"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUserAddToBasketFromProductPage"
+  }, {
+    "name" : "host",
+    "value" : "MacBook-Pro-Olga.local"
+  }, {
+    "name" : "thread",
+    "value" : "19402-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "https://tracker.yandex.ru/CHEOPSFRONT-1024",
+    "url" : "https://tracker.yandex.ru/CHEOPSFRONT-1024",
+    "type" : "issue"
+  }, {
+    "name" : "Страница товара, с которой работает тест",
+    "url" : "http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/",
+    "type" : "link"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "cf563521d188dc25.json",
+  "parameterValues" : [ ]
+}

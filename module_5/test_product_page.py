@@ -13,6 +13,7 @@ link = 'http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_9
 link_with_promo = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo="
 
 
+@allure.suite("Страница продукта")
 @allure.feature('Логин / регистрация')
 @allure.story('Гость переходит на страницу логина / регистрации со страницы товара')
 @pytest.mark.login_guest
@@ -40,6 +41,7 @@ class TestLoginButtonInProductPage:
         login_page.should_be_login_page()
 
 
+@allure.suite("Страница продукта")
 @allure.feature('Добавление товаров в корзину')
 @allure.story('Гость добавляет товары в корзину')
 class TestProductPage:
@@ -51,36 +53,28 @@ class TestProductPage:
     def test_guest_can_add_product_to_basket(self, browser, promo_offer):
         # arrange
         full_link = link_with_promo + promo_offer
-        with allure.step(f'Открываем страницу товара {full_link}'):
-            page = ProductPage(browser, full_link)
-            page.open()
+        page = ProductPage(browser, full_link)
+        page.open()
 
         # act
-        with allure.step("Добавляем товар в корзину"):
-            page.add_to_basket()
-        with allure.step("Решаем задачку и получаем код для вставки на Степик"):
-            page.solve_quiz_and_get_code()
+        page.add_to_basket()
+        page.solve_quiz_and_get_code()
 
         # assert
-        with allure.step("Проверяем, что видим сообщение об успешном добавлении товара"):
-            page.should_be_success_add_to_basket_message()
+        page.should_be_success_add_to_basket_message()
 
-        with allure.step("Извлекаем название товара со страницы товара, на которой находимся"):
-            expected_product_title = page.get_product_title()
-        with allure.step("Извлекаем название товара из сообщения об успешном добавлении"):
-            actual_product_title = page.get_success_add_to_basket_product_name()
+        expected_product_title = page.get_product_title()
+        actual_product_title = page.get_success_add_to_basket_product_name()
+
         with allure.step("Проверяем, что в сообщении об успешном добавлении товара указано верное название товара"):
             assert expected_product_title == actual_product_title, \
                 f'В сообщение об успешном добавлении товара в корзину указано неверное название товара ' \
                 f'"{actual_product_title}", а должно быть "{expected_product_title}"'
 
-        with allure.step("Проверяем, что появилось сообщение о стоимости добавленных в корзину товаров"):
-            page.should_be_basket_price_message()
+        page.should_be_basket_price_message()
 
-        with allure.step("Извлекаем стоимость товара со страницы товара, на которой находимся"):
-            expected_basket_price = page.get_product_price()
-        with allure.step("Извлекаем стоимость товаров в корзине из сообщения о стоимости товаров в корзине"):
-            actual_basket_price = page.get_basket_total_price_from_message()
+        expected_basket_price = page.get_product_price()
+        actual_basket_price = page.get_basket_total_price_from_message()
         with allure.step("Проверяем, что стоимость товаров в корзине равна стоимости добавленного товара"):
             assert expected_basket_price == actual_basket_price, \
                 f'Неверная стоимость товаров в корзине после добавления очередного товара: указано ' \
@@ -94,7 +88,8 @@ class TestProductPage:
 
         # act
         page.add_to_basket()
-        allure.attach(browser.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
+        with allure.step("Сохраняем скриншот текущей страницы"):
+            allure.attach(browser.get_screenshot_as_png(), name="Screenshot", attachment_type=AttachmentType.PNG)
 
         # assert
         page.should_not_be_success_message()
@@ -134,8 +129,11 @@ class TestProductPage:
         basket_page.should_be_empty_basket()
 
 
+@allure.suite("Страница продукта")
 @allure.feature('Добавление товаров в корзину')
 @allure.story('Залогиненный пользователь добавляет товары в корзину')
+@allure.link(link, name='Страница товара, с которой работает тест')
+@allure.issue("CHEOPSFRONT-1024")
 class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope='function', autouse=True)
     def setup(self, browser):
@@ -182,14 +180,18 @@ class TestUserAddToBasketFromProductPage:
 
         expected_product_title = page.get_product_title()
         actual_product_title = page.get_success_add_to_basket_product_name()
-        assert expected_product_title == actual_product_title, \
-            f'В сообщение об успешном добавлении товара в корзину указано неверное название товара ' \
-            f'"{actual_product_title}", а должно быть "{expected_product_title}"'
+        with allure.step('Проверяем, что название товара в сообщение об успешном добавлении '
+                         'совпадает с названием товара на странице с описанием'):
+            assert expected_product_title == actual_product_title, \
+                f'В сообщение об успешном добавлении товара в корзину указано неверное название товара ' \
+                f'"{actual_product_title}", а должно быть "{expected_product_title}"'
 
         page.should_be_basket_price_message()
 
         expected_basket_price = page.get_product_price()
         actual_basket_price = page.get_basket_total_price_from_message()
-        assert expected_basket_price == actual_basket_price, \
-            f'Неверная стоимость товаров в корзине после добавления очередного товара: указано ' \
-            f'"{actual_basket_price}", а должно быть "{expected_basket_price}"'
+        with allure.step('Проверяем, что общая стоимость товаров в корзине '
+                         'равна стоимости только что добавленного товара'):
+            assert expected_basket_price == actual_basket_price, \
+                f'Неверная стоимость товаров в корзине после добавления очередного товара: указано ' \
+                f'"{actual_basket_price}", а должно быть "{expected_basket_price}"'

@@ -1,0 +1,3 @@
+
+Запускаю браузер Chrome
+No second alert presented

@@ -1,0 +1,19 @@
+[
+  {
+    "name": "Пропущенные тесты",
+    "matchedStatuses": ["skipped"]
+  },
+  {
+    "name": "Ошибки в продукте",
+    "matchedStatuses": ["failed"]
+  },
+  {
+    "name": "Внутренние ошибки тестов",
+    "matchedStatuses": ["broken"]
+  },
+  {
+    "name": "Не найден элемент на странице",
+    "matchedStatuses": ["broken"],
+    "traceRegex": ".*NoSuchElementException.*"
+  }
+]

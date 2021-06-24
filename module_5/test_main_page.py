@@ -8,6 +8,7 @@ from .pages.main_page import MainPage
 link = "http://selenium1py.pythonanywhere.com/"
 
 
+@allure.suite("Главная страница")
 @allure.feature('Страница с корзиной')
 @allure.story('Гость переходит в корзину')
 class TestMainPage:
@@ -26,6 +27,7 @@ class TestMainPage:
         basket_page.should_be_empty_basket()
 
 
+@allure.suite("Главная страница")
 @allure.feature('Логин / регистрация')
 @allure.story('Гость переходит на страницу логина / регистрации с главной страницы')
 @pytest.mark.login_guest
