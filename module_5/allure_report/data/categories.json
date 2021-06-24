@@ -7,13 +7,13 @@
       "name" : "XFAIL\n\nAssertionError: В сообщение об успешном добавлении товара в корзину указано неверное название товара \"Coders at Work book\", а должно быть \"Coders at Work\"\nassert 'Coders at Work' == 'Coders at Work book'\n  - Coders at Work book\n  ?               -----\n  + Coders at Work",
       "children" : [ {
         "name" : "Гость может добавить товар в корзину (проверка промо)",
-        "uid" : "1e9bb0503a2160d6",
+        "uid" : "6a4598df145b8c10",
         "parentUid" : "c6e38d8e81a5ce80bbdf5b80da76c382",
         "status" : "skipped",
         "time" : {
-          "start" : 1624546582704,
-          "stop" : 1624546585226,
-          "duration" : 2522
+          "start" : 1624567861949,
+          "stop" : 1624567864060,
+          "duration" : 2111
         },
         "flaky" : false,
         "newFailed" : false,
@@ -24,13 +24,13 @@
       "name" : "XFAIL\n\nselenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#messages div.alert:nth-child(1) div.alertinner strong\"}\n  (Session info: chrome=91.0.4472.114)",
       "children" : [ {
         "name" : "Залогиненный пользователь после добавления товара в корзину видит корректные сообщения об успешности операции",
-        "uid" : "34e4dae7fab32e2b",
+        "uid" : "85efae7558c3ad92",
         "parentUid" : "eca96e7edb1c4af212813327e8aaf6fe",
         "status" : "skipped",
         "time" : {
-          "start" : 1624546688227,
-          "stop" : 1624546700478,
-          "duration" : 12251
+          "start" : 1624567971437,
+          "stop" : 1624567983562,
+          "duration" : 12125
         },
         "flaky" : false,
         "newFailed" : false,

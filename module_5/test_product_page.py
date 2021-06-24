@@ -123,6 +123,7 @@ class TestProductPage:
         page.open()
 
         # act
+        page.go_to_basket()
         basket_page = BasketPage(browser, browser.current_url)
 
         # and assert
