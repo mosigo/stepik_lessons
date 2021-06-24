@@ -7,7 +7,7 @@ from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
-    @allure.step('Ищем кнопку "{1}"')
+    @allure.step('Ищем кнопку "{2}"')
     def get_submit_button(self, locator, button_description):
         button = self.browser.find_element(*locator)
         WebDriverWait(self.browser, 5).until(
@@ -17,14 +17,14 @@ class LoginPage(BasePage):
         )
         return button
 
-    @allure.step('Выполняем логин под пользователем с email {0} и паролем {1}')
+    @allure.step('Выполняем логин под пользователем с email {1} и паролем {2}')
     def login_user(self, email, password):
         button = self.get_submit_button(LoginPageLocators.LOGIN_FORM_SUBMIT_BUTTON, 'Войти')
         self.browser.find_element(*LoginPageLocators.LOGIN_FORM_EMAIL).send_keys(email)
         self.browser.find_element(*LoginPageLocators.LOGIN_FORM_PASSWORD).send_keys(password)
         button.click()
 
-    @allure.step('Регистрируем пользователя с email {0} и паролем {1}')
+    @allure.step('Регистрируем пользователя с email {1} и паролем {2}')
     def register_new_user(self, email, password):
         button = self.get_submit_button(LoginPageLocators.REGISTER_FORM_SUBMIT_BUTTON, 'Зарегистироваться')
         self.browser.find_element(*LoginPageLocators.REGISTER_FORM_EMAIL).send_keys(email)

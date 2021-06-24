@@ -26,8 +26,8 @@ def browser(request):
 
     yield browser
 
-    # now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
-    # browser.save_screenshot(f'screenshot-{now}.png')
+    now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+    browser.save_screenshot(f'screenshot-{now}.png')
     browser.quit()
 
 
@@ -42,4 +42,3 @@ def pytest_addoption(parser):
                      help="Установите язык, который будет передан в заголовок 'accept_languages'")
     parser.addoption('--browser', action='store', default="chrome",
                      help="Выберите браузер: chrome или firefox")
-
