@@ -1,0 +1,165 @@
+import time
+
+import allure
+import pytest
+
+from .pages.basket_page import BasketPage
+from .pages.login_page import LoginPage
+from .pages.product_page import ProductPage
+
+link = 'http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/'
+link_with_promo = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo="
+
+
+@allure.suite("Страница продукта")
+@allure.feature('Логин / регистрация')
+@allure.story('Гость переходит на страницу логина / регистрации со страницы товара')
+@pytest.mark.guest
+class TestLoginButtonInProductPage:
+    @allure.title('Гость должен видеть кнопку перехода на страницу логина / регистрации')
+    def test_guest_should_see_login_link_on_product_page(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # assert
+        page.should_be_login_link()
+
+    @allure.title('Гость может перейти на страницу логина / регистрации')
+    def test_guest_can_go_to_login_page_from_product_page(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        page.go_to_login_page()
+        login_page = LoginPage(browser, browser.current_url)
+
+        # assert
+        login_page.should_be_login_page()
+
+
+@allure.feature('Добавление товаров в корзину')
+@allure.story('Гость добавляет товары в корзину со страницы товара')
+@allure.suite("Страница продукта")
+@pytest.mark.guest
+class TestProductPage:
+    @allure.title('Гость может добавить товар в корзину (проверка промо)')
+    @pytest.mark.xfail
+    @pytest.mark.parametrize('promo_offer',
+                             ["offer0", "offer1", "offer2", "offer3", "offer4", "offer5", "offer6", "offer7", "offer8",
+                              "offer9"])
+    def test_guest_can_add_product_to_basket(self, browser, promo_offer):
+        # arrange
+        full_link = link_with_promo + promo_offer
+        page = ProductPage(browser, full_link)
+        page.open()
+
+        # act
+        page.add_to_basket()
+        page.solve_quiz_and_get_code()
+
+        # assert
+        page.should_be_success_add_to_basket_message()
+        page.should_be_correct_product_title_in_success_message()
+        page.should_be_basket_price_message()
+        page.should_be_correct_product_price_in_basket()
+
+    @allure.title('Гость НЕ должен видеть сообщение об успешном добавлении товара в корзину')
+    def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        page.add_to_basket()
+
+        # assert
+        page.should_not_be_success_message()
+
+    @allure.title('Гость НЕ должен видеть сообщения об успешном добавлении товара в корзину '
+                  'сразу после перехода на страницу товара')
+    def test_guest_cant_see_success_message(self, browser):
+        # arrange
+        page = ProductPage(browser, link_with_promo)
+        page.open()
+
+        # assert
+        page.should_not_be_success_message()
+
+    @allure.title('Сообщение об успешном добавлении товара в корзину должно исчезать после добавления товара в корзину')
+    def test_message_disappeared_after_adding_product_to_basket(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        page.add_to_basket()
+
+        # assert
+        page.should_be_success_message_disappear()
+
+    @allure.title('Гость НЕ должен видеть товаров в корзине, если перешёл в неё, не добавляя перед этим товаров')
+    def test_guest_cant_see_product_in_basket_opened_from_product_page(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        page.go_to_basket()
+        basket_page = BasketPage(browser, browser.current_url)
+
+        # and assert
+        basket_page.should_be_empty_basket()
+
+
+@allure.suite("Страница продукта")
+@allure.feature('Добавление товаров в корзину')
+@allure.story('Залогиненный пользователь добавляет товары в корзину со страницы каталога')
+@allure.link(link, name='Страница товара, с которой работает тест')
+@allure.issue("CHEOPSFRONT-1024")
+class TestUserAddToBasketFromProductPage:
+    @pytest.fixture(scope='function', autouse=True)
+    def setup(self, browser):
+        page = ProductPage(browser, link)
+        page.open()
+
+        # открыть страницу регистрации
+        page.go_to_login_page()
+        login_page = LoginPage(browser, browser.current_url)
+
+        # зарегистрировать нового пользователя
+        rnd_string = str(int(time.time()))
+        email = f'q_{rnd_string}@ya.ru'
+        password = f'qq_{rnd_string}'
+        login_page.register_new_user(email, password)
+
+        # проверить, что пользователь залогинен
+        login_page.should_be_authorized_user()
+
+    @allure.title('Залогиненный пользователь НЕ должен видеть сообщения об успешном добавлении товара в корзину '
+                  'сразу после перехода на страницу товара')
+    def test_user_cant_see_success_message(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # assert
+        page.should_not_be_success_message()
+
+    @allure.title('Залогиненный пользователь после добавления товара в корзину видит корректные сообщения '
+                  'об успешности операции')
+    @pytest.mark.xfail
+    def test_user_can_add_product_to_basket(self, browser):
+        # arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # act
+        page.add_to_basket()
+
+        # assert
+        page.should_be_success_add_to_basket_message()
+        page.should_be_correct_product_title_in_success_message()
+        page.should_be_basket_price_message()
+        page.should_be_correct_product_price_in_basket()
