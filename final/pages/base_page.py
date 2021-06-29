@@ -9,9 +9,10 @@ from .locators import BasePageLocators
 
 
 class BasePage:
-    def __init__(self, browser, url, timeout=10):
+    def __init__(self, browser, url, name, timeout=10):
         self.browser = browser
         self.url = url
+        self.name = name
         self.browser.implicitly_wait(timeout)
 
     def open(self):
@@ -33,6 +34,11 @@ class BasePage:
         assert self.is_element_present(*BasePageLocators.LOGIN_LINK), \
             'Нет кнопки логина на странице'
 
+    @allure.step('Проверяем, что кнопка перехода в корзину есть на странице')
+    def should_be_basket_link(self):
+        assert self.is_element_present(*BasePageLocators.BASKET_LINK), \
+            'Нет кнопки перехода в корзину на странице'
+
     @allure.step('Проверяем, что есть иконка пользователя, то есть человек залогинен')
     def should_be_authorized_user(self):
         assert self.is_element_present(*BasePageLocators.USER_ICON), \
@@ -45,16 +51,17 @@ class BasePage:
             return False
         return True
 
-    def is_not_element_present(self, how, what, timeout=4):
+    def is_not_element_present(self, how, what, timeout_in_seconds=4):
         try:
-            WebDriverWait(self.browser, timeout).until(presence_of_element_located((how, what)))
+            WebDriverWait(self.browser, timeout_in_seconds).until(presence_of_element_located((how, what)))
         except TimeoutException:
             return True
         return False
 
-    def is_disappeared(self, how, what, timeout=4):
+    def is_disappeared(self, how, what, timeout_in_seconds=4):
         try:
-            WebDriverWait(self.browser, timeout, 1, TimeoutException). \
+            WebDriverWait(self.browser, timeout_in_seconds,
+                          poll_frequency=1, ignored_exceptions=TimeoutException). \
                 until_not(presence_of_element_located((how, what)))
         except TimeoutException:
             return False
@@ -70,7 +77,7 @@ class BasePage:
         try:
             alert = self.browser.switch_to.alert
             alert_text = alert.text
-            print(f"Your code: {alert_text}")
+            print(f"Код для вставки на Степик: {alert_text}")
             alert.accept()
         except NoAlertPresentException:
-            print("No second alert presented")
+            print("Второй алерт не появился :(")

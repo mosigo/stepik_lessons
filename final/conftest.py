@@ -1,6 +1,8 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from abc import abstractmethod
+from enum import Enum, auto
 
 
 @pytest.fixture(scope="function")
@@ -45,3 +47,40 @@ def pytest_addoption(parser):
                      help="Установите язык, который будет передан в заголовок 'accept_languages'")
     parser.addoption('--browser', action='store', default="chrome",
                      help="Выберите браузер: chrome, headless-chrome или firefox")
+
+
+class Page(Enum):
+    MAIN = auto()
+    CATALOGUE = auto()
+    PRODUCT = auto()
+    PRODUCT_PROMO = auto()
+    LOGIN = auto()
+    BASKET = auto()
+
+
+class LinkProvider:
+
+    @abstractmethod
+    def get_link(self, page):
+        pass
+
+
+class DefaultLinkProvider(LinkProvider):
+
+    def __init__(self):
+        self.links = {
+            Page.MAIN: 'http://selenium1py.pythonanywhere.com/',
+            Page.CATALOGUE: 'http://selenium1py.pythonanywhere.com/catalogue/category/books_2/',
+            Page.PRODUCT: 'http://selenium1py.pythonanywhere.com/catalogue/the-city-and-the-stars_95/',
+            Page.PRODUCT_PROMO: 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/',
+            Page.LOGIN: 'http://selenium1py.pythonanywhere.com/accounts/login/',
+            Page.BASKET: 'http://selenium1py.pythonanywhere.com/basket/'
+        }
+
+    def get_link(self, page):
+        return self.links.get(page)
+
+
+@pytest.fixture(scope="session")
+def link_provider():
+    return DefaultLinkProvider()

@@ -7,6 +7,10 @@ from .locators import LoginPageLocators
 
 
 class LoginPage(BasePage):
+
+    def __init__(self, browser, url):
+        super().__init__(browser, url, 'Страница логина')
+
     @allure.step('Ищем кнопку "{2}"')
     def get_submit_button(self, locator, button_description):
         button = self.browser.find_element(*locator)

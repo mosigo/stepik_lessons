@@ -8,6 +8,9 @@ from .locators import CataloguePageLocators
 
 class CataloguePage(BasePage):
 
+    def __init__(self, browser, url):
+        super().__init__(browser, url, 'Страница каталога')
+
     @allure.step('Получаем отображаемую информацию о кол-ве элементов в текущем разделе каталога')
     def get_actual_pager_statistic(self):
         [elem_cnt, elem_from, elem_to] = \

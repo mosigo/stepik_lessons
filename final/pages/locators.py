@@ -13,7 +13,7 @@ class BasketPageLocators:
 
 
 class MainPageLocators:
-    pass
+    NAVBAR = (By.CSS_SELECTOR, '#browse')
 
 
 class LoginPageLocators:
