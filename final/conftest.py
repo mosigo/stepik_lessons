@@ -1,8 +1,20 @@
+from datetime import datetime
+
+import allure
 import pytest
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from abc import abstractmethod
 from enum import Enum, auto
+
+
+@pytest.hookimpl(hookwrapper=True, tryfirst=True)
+def pytest_runtest_makereport(item, call):
+    outcome = yield
+    rep = outcome.get_result()
+    setattr(item, "rep_" + rep.when, rep)
+    return rep
 
 
 @pytest.fixture(scope="function")
@@ -32,6 +44,15 @@ def browser(request):
     browser.implicitly_wait(5)
 
     yield browser
+
+    if request.node.rep_call.failed or request.node.rep_call.skipped or request.node.rep_setup.failed:
+        now = datetime.now().strftime('%Y-%m-%d_%H-%M-%S')
+        attach_name = request.function.__name__ + '_' + now
+        allure.attach(
+            browser.get_screenshot_as_png(),
+            name=attach_name,
+            attachment_type=allure.attachment_type.PNG
+        )
 
     browser.quit()
 

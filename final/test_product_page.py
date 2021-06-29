@@ -44,7 +44,6 @@ class TestAddProductToBasketPROMO:
 @allure.suite('Страница продукта')
 @allure.sub_suite('Нет сообщений об успешном добавлении товара в корзину там, где их не должно быть')
 @pytest.mark.guest
-@pytest.mark.cur
 class TestNoSuccessMessageAboutAddToBasket:
     @allure.title('Гость НЕ должен видеть сообщение об успешном добавлении товара в корзину')
     def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser, link_provider):
@@ -87,7 +86,6 @@ class TestNoSuccessMessageAboutAddToBasket:
 @allure.story('Залогиненный пользователь добавляет товары в корзину со страницы каталога')
 @allure.suite('Страница продукта')
 @allure.sub_suite('Залогиненный пользователь. Добавление товара в корзину')
-@pytest.mark.cur
 class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope='function', autouse=True)
     def setup(self, browser, link_provider):
