@@ -24,7 +24,6 @@ def all_pages():
 @allure.suite('Все страницы')
 @allure.sub_suite('Переход на страницу логина со всех других страниц')
 @pytest.mark.guest
-@pytest.mark.personal_tests
 class TestGuestGoToLogin:
 
     @pytest.mark.parametrize('page_creator', all_pages())
